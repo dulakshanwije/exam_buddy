@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+}
+.form_holder{
+    margin: auto;
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    border: steelblue 3px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.form_holder .col-100 {
+    margin: 10px 0px;
+    width: 100%;
+    /* padding: 5px; */
+    /* border: cadetblue 1px solid; */
+}
+.form_holder .col-100 p {
+   text-align: center;
+   font-size: 12px;
+}
+
+.form_holder .col-100 input {
+    width: 100%;
+}
+.form_holder .col-100 input[type = "submit"] {
+    width: 100%;
+    /* background-color: transparent; */
+    border-radius: 10px;
+    padding: 5px;
+}
+.form_holder .col-100 input[type = "text"],input[type = "number"] {
+    font-size: 15px;
+}
+.form_holder .col-50 input[type = "text"],input[type = "number"] {
+    font-size: 15px;
+    /* width: 50%; */
+}
+
+.form_holder .col-50{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.form_holder .col-50 input{
+    width: auto;
+}
+.display_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+/* .flex_column input{
+    width: fit-content;
+} */
+
+@media screen and (max-width : 600px) {
+    .form_holder{
+        width: 90%;
+    }
+    .form_holder .flex_column{
+        flex-direction: column;
+    }
+    .form_holder .flex_column input{
+        width: 100%;
+    }
+}

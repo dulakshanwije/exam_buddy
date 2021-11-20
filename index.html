@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Exam Buddy</title>
+</head>
+<body>
+    <div class="form_holder">
+        <h2>Exam Buddy</h2>
+        <form action="" onsubmit="copyText()">
+            <div class="col-100">
+                <label for="">Salutation :</label>
+                <div class="col-50">
+                    <span class="display_row">
+                        <input type="radio" name="salutation" id="sir" required>
+                        <label for="sir">Sir</label>
+                    </span>
+                    <span class="display_row">
+                        <input type="radio" name="salutation" id="madam" required>
+                        <label for="madam">Ms</label>
+                    </span>
+                </div>
+            </div>
+            <div class="col-100">
+                <label for="">Course Code :</label>
+                
+                <div class="col-50 flex_column" >
+                    <input type="text" id="course_code_txt" placeholder="ABCD" maxlength="4" required>
+                    <input type="number" id="course_code_num" placeholder="1234" maxlength="4" required>
+                </div>
+            </div>
+            <div class="col-100">
+                <label for="course_title">Course Title :</label>
+                <input type="text" id="course_title" required>
+            </div>
+            <div class="col-100">
+                <input type="submit" value="COPY">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

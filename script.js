@@ -4,10 +4,10 @@ function copyText(){
     var course_code_num;
     var course_title;
     if(document.getElementById("sir").checked == true){
-        salutation = "Sir,";
+        salutation = "Dear Sir,";
     }
     else if(document.getElementById("madam").checked == true){
-        salutation = "Madam,";
+        salutation = "Dear Madam,";
     }
 
     course_code_txt = document.getElementById("course_code_txt").value;
